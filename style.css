@@ -1,18 +1,36 @@
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+}
+
 .center {
     text-align: center;
 }
 
 .instructions {
     border: 1px solid black;
-}
-
-.container {
-    margin-top: 50px;
-    border: 1px solid black;
+    margin-bottom: 50px;
 }
 
 .color-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: repeat(16, 1fr);
+    height: 100%;
+}
+
+.grid-cell {
+    width: 100px;
 }
