@@ -35,6 +35,6 @@ let grid = document.querySelector(".grid");
 
 for (let i = 0; i < 16 * 16; i++) {
     let grid_cell = document.createElement("div");
-    grid_cell.classList.add(".grid-cell");
+    grid_cell.classList.add("grid-cell");
     grid.appendChild(grid_cell);
 }
