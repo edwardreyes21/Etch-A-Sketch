@@ -32,3 +32,12 @@ for (let i = 0; i < 16 * 16; i++) {
     grid.appendChild(grid_cell);
 }
 
+// Reset button
+let reset_button = document.querySelector("#reset-button");
+reset_button.style.cursor = "pointer";
+
+reset_button.addEventListener("click", (Event) => {
+    for (let i = 0; i < 16 * 16; i++) {
+        grid.children[i].style.background = "white";
+    }
+});
